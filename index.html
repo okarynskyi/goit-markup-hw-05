@@ -50,7 +50,16 @@
         <section class="hero">
             <div class="container">
                 <h1 class="main-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="modal-btn" type="button">Заказать услугу</button>
+                <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="exit-modal" data-modal-close>
+                        <svg class="exit-icon" width="11" height="11">
+                            <use href="./images/icons.svg#exit"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
         <section class="qualities">
@@ -64,7 +73,8 @@
                             </svg>
                         </div>
                         <h3 class="qualities-title">Внимание к деталям</h3>
-                        <p class="qualities-description">Идейные соображения, а также начало повседневной работы по
+                        <p class="qualities-description">Идейные соображения, а также начало повседневной работы
+                            по
                             формированию позиции.</p>
                     </li>
                     <li class="qualities-list">
@@ -74,7 +84,8 @@
                             </svg>
                         </div>
                         <h3 class="qualities-title">Пунктуальность</h3>
-                        <p class="qualities-description">Задача организации, в особенности же рамки и место обучения
+                        <p class="qualities-description">Задача организации, в особенности же рамки и место
+                            обучения
                             кадров
                             влечет за собой.</p>
                     </li>
@@ -85,7 +96,8 @@
                             </svg>
                         </div>
                         <h3 class="qualities-title">Планирование</h3>
-                        <p class="qualities-description">Равным образом консультация с широким активом в значительной
+                        <p class="qualities-description">Равным образом консультация с широким активом в
+                            значительной
                             степени обуславливает.</p>
                     </li>
                     <li class="qualities-list">
@@ -95,7 +107,8 @@
                             </svg>
                         </div>
                         <h3 class="qualities-title">Современные технологии</h3>
-                        <p class="qualities-description">Значимость этих проблем настолько очевидна, что реализация
+                        <p class="qualities-description">Значимость этих проблем настолько очевидна, что
+                            реализация
                             плановых
                             заданий.</p>
                     </li>
@@ -386,6 +399,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
