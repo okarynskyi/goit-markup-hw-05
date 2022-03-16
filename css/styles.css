@@ -78,9 +78,6 @@ img {
   align-items: center;
 }
 
-.nav-list-item {
-}
-
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
