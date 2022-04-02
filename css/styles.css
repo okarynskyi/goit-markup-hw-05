@@ -619,8 +619,12 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.tab-list:hover,
-.tab-list:focus {
+.tab-link {
+  display: block;
+}
+
+.tab-link:hover,
+.tab-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -654,11 +658,8 @@ img {
   color: #ffffff;
 }
 
-.tab-list:hover .tab-overlay {
-  transform: translateY(0);
-}
-
-.tab-list:focus .tab-overlay {
+.tab-link:hover .tab-overlay,
+.tab-link:focus .tab-overlay {
   transform: translateY(0);
 }
 
